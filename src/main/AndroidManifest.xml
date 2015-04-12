@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abk.lw.starter">
+
+    <uses-feature android:name="android.software.live_wallpaper" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true"
+        android:name=".android.WallpaperApplication">
+
+        <service
+            android:label="@string/wallpaper_label"
+            android:name=".android.WallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper" />
+        </service>
+        <activity
+            android:label="@string/settings_title"
+            android:name=".android.WallpaperSettings"
+            android:theme="@android:style/Theme.WallpaperSettings"
+            android:exported="true">
+        </activity>
+
+    </application>
+
+</manifest>

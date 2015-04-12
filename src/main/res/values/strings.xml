@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Live Wallpaper Starter</string>
+    <string name="wallpaper_label">Live Wallpaper Starter</string>
+    <string name="description">An example live wallpaper.</string>
+    <string name="settings_title">Wallpaper Settings</string>
+    <string name="theme_settings_title">Color Theme</string>
+    <string name="theme_settings_summary">Select the color theme.</string>
+    <string name="start_title">Select Start Value</string>
+    <string name="start_summary">Select number to start counting.</string>
+    <string name="theme_key">theme</string>
+    <string name="start_key">start</string>
+    <string name="speed_key">speed</string>
+    <string name="speed_settings_title">Wallpaper Speed</string>
+    <string name="speed_settings_summary">Set how fast the wallpaper is updated.</string>
+</resources>
